@@ -10,11 +10,14 @@ Oracle Cloud Infrastructure (OCI) Container Engine for Kubernetes (OKE) reduces 
 
 * High performance: Containerized applications run on high-performance Compute resources through OCI's non-blocking network.
 
-Earlier in the year Oracle announced general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. This standard method to connect is with FastConnect or VPN/Bastion connectivity.
+Earlier in the year Oracle announced general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. The standard method to connect is with FastConnect or VPN/Bastion connectivity.
 
 What's New?
 
-Oracle and new partner NetFoundry have devised an alternative solution using SDN technology. NetFoundry provides Zero Trust Networking for private cloud resources. [Here is more information on the NetFoundry Zero Trust Networking platform.](https://blogs.oracle.com/cloud-infrastructure/zero-trust-network-access-with-netfoundry)
+Oracle and it's partner NetFoundry have designed an alternative solution using SDN technology. NetFoundry provides Zero Trust Networking for private cloud resources. [Here is more information on the NetFoundry Zero Trust Networking platform.](https://blogs.oracle.com/cloud-infrastructure/zero-trust-network-access-with-netfoundry)
+The solution is 100% software and can be instantiated directly from the Oracle Cloud console and OCI CLI using HELM Charts.
+
+
 
 
 
