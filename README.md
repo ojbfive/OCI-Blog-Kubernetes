@@ -3,7 +3,7 @@
 ![](basic/nfkubbiker.jpg)
 
 
-Oracle Cloud Infrastructure (OCI) Container Engine for Kubernetes (OKE) reduces the operational burden of setting up and managing enterprise-grade Kubernetes clusters. NetFoundry and Oracle recognize that connecting to your Kubernetes cluster and its ecosystem is complex, so NetFoundry allows you to connect while also following Oracle best practice design principles:
+Oracle Cloud Infrastructure (OCI) & Oracle Container Engine for Kubernetes (OKE) reduces the operational burden of setting up and managing enterprise-grade Kubernetes clusters. NetFoundry and Oracle recognize that connecting to your Kubernetes cluster and its ecosystem is complex, so NetFoundry allows you to connect while also following Oracle best practice design principles:
 
 * Secure by default: OKE hardens Kubernetes clusters following Enterprise Security best practices.
 
