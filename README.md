@@ -1,3 +1,4 @@
+![](basic/logo.png)
 # Connecting to OKE Private API with NetFoundry Networking.
 ![](basic/nfkubbiker.jpg)
 
@@ -14,8 +15,8 @@ Earlier in the year Oracle announced general availability of fully private Kuber
 
 What's New?
 
-Oracle and it's partner NetFoundry have designed an alternative solution using SDN technology. NetFoundry provides Zero Trust Networking for private cloud resources. [Here is more information on the NetFoundry Zero Trust Networking platform.](https://blogs.oracle.com/cloud-infrastructure/zero-trust-network-access-with-netfoundry)
-The solution is 100% software and can be instantiated directly from the Oracle Cloud console and OCI CLI using HELM Charts.
+Oracle and technology partner NetFoundry have designed an alternative solution using SDN technology. NetFoundry provides Zero Trust Network connectivity for Edge, Multicloud, IOT and on premise infrastructure. [Here is more information on the NetFoundry Zero Trust Networking platform.](https://blogs.oracle.com/cloud-infrastructure/zero-trust-network-access-with-netfoundry)
+The solution is 100% software and can be instantiated directly from the Oracle Cloud console and OCI CLI using HELM Charts to deploy NetFoundry software.
 
 
 
