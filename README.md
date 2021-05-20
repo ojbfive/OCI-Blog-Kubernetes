@@ -34,8 +34,10 @@ The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into th
 Basic Steps and More Information
 
 1. [Get started with Oracle Cloud here.](https://www.oracle.com/cloud/free/)
+    - [VCN Information](https://docs.oracle.com/en-us/iaas/Content/GSG/Tasks/creatingnetwork.htm)
+    
 2. [Create a Kubernetes cluster in your OCI account with at least one worker. node.](https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcreatingclusterusingoke.htm)
-NOTE: This may require upgrading your account from free status.
+NOTE: This may require upgrading your account to billing enabled.
 3. [Install kubectl on the remote host for you will be using for administrative purposes.](https://kubernetes.io/docs/tasks/tools/)
 4. [Install Helm, the package manager for Kubernetes.](https://helm.sh/docs/intro/quickstart/)
 5. [Sign up for a free trial with NetFoundry](https://nfconsole.io/signup)
