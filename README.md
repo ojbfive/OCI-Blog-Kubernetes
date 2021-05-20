@@ -11,9 +11,13 @@ Oracle Cloud Infrastructure (OCI) & Oracle Container Engine for Kubernetes (OKE)
 
 * High performance: Containerized applications run on high-performance Compute resources through OCI's non-blocking network.
 
+Just a few years ago, the first major vulnerability (CVE-2018–1002105) was discovered in Kubernetes, A vulnerability on a default install, allows an attacker to access to the Kubernetes API to gain full administrator access to the cluster and everything running on it. While this vulnerability has been fixed, this leaves the question, when could it happen again or what is next?
+
+Additionally, it is possible to mistakenly leave Kubernetes implementation API server exposed to the internet so why not configure a NetFoundry Zero Trust Network connection so you don't have to implement a Bastion host or even worse a VPN. No need to whitelist IP's as NetFoundry requires no Inbound ports to be opened, only outbound Control/Data plane ports. 
+
 [Earlier in the year Oracle announced](https://blogs.oracle.com/cloud-infrastructure/announcing-private-kubernetes-clusters) general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. The standard method to connect is with FastConnect or VPN/Bastion connectivity.
 
-What's New?
+Ok, so what's new? 
 
 Oracle and technology partner NetFoundry have designed an alternative to circuit and VPN solutions using SDN cloud technology. NetFoundry provides Zero Trust Network connectivity for Edge, Multicloud, IOT and on premise infrastructure. [Here is more information on the NetFoundry Zero Trust Networking platform.](https://blogs.oracle.com/cloud-infrastructure/zero-trust-network-access-with-netfoundry)
 The solution is 100% software and can be instantiated directly from the Oracle Cloud console and OCI CLI using HELM Charts to deploy NetFoundry software.
@@ -45,6 +49,9 @@ NOTE: This may require upgrading your account to billing enabled.
 
 
 See the full demo quick start guide [here.](https://developer.netfoundry.io/guides/kubernetes/)
+
+
+Once the POD is deployed, in addition to connecting to your containers in the cluster, you will be able to manage your OKE cluster over a secure Zero Trust Network.
 
 
 
