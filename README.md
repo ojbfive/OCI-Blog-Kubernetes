@@ -22,12 +22,15 @@ NetFoundry allows Administrators to configure a NetFoundry network to publish yo
 
 You will deploy a NetFoundry endpoint as a pod on your Kubernetes cluster with a Helm chart. The endpoint may then be assigned in your NetFoundry network to host any services that are reachable inside your Kubernetes cluster. For example, the master API server used by kubectl, a Kubernetes dashboard, or any pod, service, or node IP or domain name you wish to expose to authorized remote apps, devices, or subnets.
 
-Basic Steps and Information
+Basic Steps and More Information
 
 1. [Create a Kubernetes cluster in your OCI account with at least one worker node.](https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/contengcreatingclusterusingoke.htm)
 2. [Install kubectl on the remote host for you will be using for administrative purposes.](https://kubernetes.io/docs/tasks/tools/)
 3. [Install Helm, the package manager for Kubernetes.](https://helm.sh/docs/intro/quickstart/)
 4. [Sign up for a free trial with NetFoundry](https://nfconsole.io/signup)
+
+
+
 
 
 
