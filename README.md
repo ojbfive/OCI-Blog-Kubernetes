@@ -11,7 +11,7 @@ Oracle Cloud Infrastructure (OCI) & Oracle Container Engine for Kubernetes (OKE)
 
 * High performance: Containerized applications run on high-performance Compute resources through OCI's non-blocking network.
 
-Earlier in the year Oracle announced general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. The standard method to connect is with FastConnect or VPN/Bastion connectivity.
+[Earlier in the year Oracle announced](https://blogs.oracle.com/cloud-infrastructure/announcing-private-kubernetes-clusters) general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. The standard method to connect is with FastConnect or VPN/Bastion connectivity.
 
 What's New?
 
@@ -27,7 +27,7 @@ Solution Diagram
 
 ![](screenshot/oci-k8s.png)
 
-The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into the cluster. Remote connectivity to the Kubernetes API Server is forwarded through the NetFoundry overlay network to the POD endpoint. 
+The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into the cluster. Remote connectivity to the Kubernetes API Server is forwarded through the NetFoundry overlay network to the POD endpoint. Private connectivity for administrative tasks or workloads can be established from any registered endpoint in any Public Cloud, On Premise location or remote user.
 
 
 
