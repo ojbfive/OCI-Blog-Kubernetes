@@ -27,7 +27,7 @@ Solution Diagram
 
 ![](screenshot/oci-k8s.png)
 
-
+The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into the cluster. Remote connectivity to the Kubernetes API Server is forwarded through the NetFoundry overlay network to the POD endpoint. 
 
 
 
