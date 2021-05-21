@@ -1,4 +1,4 @@
-![](basic/logo.png)
+
 # Connecting to OKE Private API with NetFoundry Networking.
 ![](basic/nfkubbiker.jpg)
 
