@@ -26,21 +26,19 @@ Just a few years ago, the first major vulnerability (CVE-2018–1002105) was dis
 
 
 
-Ok, so what's new? 
+Ok, so what is new and how do we solve the problems above?
 
-Oracle and technology partner NetFoundry have designed an alternative to circuit and VPN solutions using SDN cloud technology. NetFoundry provides Zero Trust Network connectivity for Edge, Multicloud, IOT and on premise infrastructure. [Here is more information on the NetFoundry Zero Trust Networking platform.](https://blogs.oracle.com/cloud-infrastructure/zero-trust-network-access-with-netfoundry)
-The solution is 100% software and can be instantiated directly from the Oracle Cloud console and OCI CLI using HELM Charts to deploy NetFoundry software.
+Oracle and technology partner NetFoundry have designed an alternative to circuit and VPN solutions using Software-Defined Network cloud technology. NetFoundry provides Zero Trust Network connectivity for any use case including Edge, Multicloud, IOT and on-premises infrastructure, remote access and application embedded. Here is more information on the NetFoundry Zero Trust Networking platform. The solution is 100% software based as well as API/Infra-As-Code compatible and thus can be instantiated directly from the Oracle Cloud console and OCI CLI using HELM Charts to deploy NetFoundry software – with very little training or specialized network skills.
 
-NetFoundry allows Administrators to configure a NetFoundry network to publish your Oracle Kubernetes cluster’s internal services. This is a programmable approach to secure access that makes traditional alternatives like IP allow lists, virtual private networks, and bastion hosts obsolete. This also means your OKE cluster could be in any VCN, it can reach out to the internet, and the master API server need not be exposed to the public internet.
+NetFoundry allows Administrators to configure a NetFoundry network to publish your Oracle Kubernetes cluster’s internal services. This is a programmable approach to secure access that makes traditional alternatives like IP allow lists, virtual private networks, and bastion hosts obsolete. This also means your OKE cluster could be in any VCN, it can reach out to the internet, and the master API server need not be exposed to the public internet (i.e., no inbound ports or whitelisting IPs). Connectivity is made outbound using identity-based networking, IP addresses become redundant – in fact, multi-cloud becomes simple as we no longer must worry about the traditional network concepts of East-West and North-South, we can build app-to-app or pod-to-pod connectivity. 
 
 You will deploy a NetFoundry endpoint as a pod on your Kubernetes cluster with a Helm chart. The endpoint may then be assigned in your NetFoundry network to host any services that are reachable inside your Kubernetes cluster. For example, the master API server used by kubectl, a Kubernetes dashboard, or any pod, service, or node IP or domain name you wish to expose to authorized remote apps, devices, or subnets.
-
 
 Solution Diagram 
 
 ![](screenshot/oci-k8s.png)
 
-The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into the cluster. Remote connectivity to the Kubernetes API Server is forwarded through the NetFoundry overlay network to the POD endpoint. Private connectivity for administrative tasks or workloads can be established from any registered endpoint in any Public Cloud, On Premise location or remote user.
+The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into the cluster. Remote connectivity to the Kubernetes API Server is forwarded through the NetFoundry overlay network to the POD endpoint. Private connectivity for administrative tasks or workloads can be established from any registered endpoint in any Public Cloud, On Premise location or remote user. NetFoundry is built on open source Ziti which means you can also embed connectivity directly into the application through SDKs or use endpoints such as Zero Trust Webhooks for GitHub or Gitlab for secure and private connectivity to certain SaaS services. Further, NetFoundry was developed to be operated in developer friendly environments using automation and Infrastructure-as-Code tools – more can be found here on the modules they have today.
 
 
 
@@ -62,9 +60,11 @@ See the full demo quick start guide [here.](https://developer.netfoundry.io/guid
 
 Once the POD is deployed, in addition to connecting to your containers in the cluster, you will be able to manage your OKE cluster over a secure Zero Trust Network.
 
+In summary, we now have a fourth option from Oracle and NetFoundry which enables anyone to take advantage of fully private Kubernetes clusters without the same drawbacks as other solutions:
 
-
-
+* We can create automated and private connectivity in minutes from the to any other public/private (or devices and more) with very little training or specialized skills.
+* We create Zero Trust private overlays which can be highly granular, making OKE and its workloads invisible while having the reach and economics of public Internet.
+* •	We achieve cloud-based consumption and economic model with automation to increase uptime and availability as well as reduce operational management costs.
 
 
 
