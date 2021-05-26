@@ -36,7 +36,7 @@ You will deploy a NetFoundry endpoint as a pod on your Kubernetes cluster with a
 
 Solution Diagram 
 
-![](screenshot/oci-k8s.png)
+![](screenshot/oci-k8s-with-GIT.png)
 
 The diagram depicts a NetFoundry POD endpoint deployed with a Helm chart into the cluster. Remote connectivity to the Kubernetes API Server is forwarded through the NetFoundry overlay network to the POD endpoint. Private connectivity for administrative tasks or workloads can be established from any registered endpoint in any Public Cloud, On Premise location or remote user. NetFoundry is built on open source Ziti which means you can also embed connectivity directly into the application through SDKs or use endpoints such as Zero Trust Webhooks for GitHub or Gitlab for secure and private connectivity to certain SaaS services. Further, NetFoundry was developed to be operated in developer friendly environments using automation and Infrastructure-as-Code tools – more can be found here on the modules they have today.
 
