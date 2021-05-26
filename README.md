@@ -11,11 +11,20 @@ Oracle Cloud Infrastructure (OCI) & Oracle Container Engine for Kubernetes (OKE)
 
 * High performance: Containerized applications run on high-performance Compute resources through OCI's non-blocking network.
 
-Just a few years ago, the first major vulnerability (CVE-2018–1002105) was discovered in Kubernetes, A vulnerability on a default install, allows an attacker to access to the Kubernetes API to gain full administrator access to the cluster and everything running on it. While this vulnerability has been fixed, this leaves the question, when could it happen again or what is next?
+Just a few years ago, the first major vulnerability (CVE-2018–1002105) was discovered in Kubernetes, A vulnerability on a default install, allows an attacker to access to the Kubernetes API to gain full administrator access to the cluster and everything running on it. While this vulnerability has been fixed, this leaves the question, when could it happen again or what is next? Additionally, it is possible to mistakenly leave Kubernetes implementation API server exposed to the internet or through a misconfiguration leave your environment exposed to compromise – e.g.,  [researchers are warning of increased complicated attacks targeting Kubernetes including use of malware.](https://threatpost.com/new-malware-hijacks-kubernetes-clusters-to-mine-monero/163629/)
 
-Additionally, it is possible to mistakenly leave Kubernetes implementation API server exposed to the internet so why not configure a NetFoundry Zero Trust Network connection so you don't have to implement a Bastion host or even worse a VPN. No need to whitelist IP's as NetFoundry requires no Inbound ports to be opened, only outbound Control/Data plane ports. 
 
-[Earlier in the year Oracle announced](https://blogs.oracle.com/cloud-infrastructure/announcing-private-kubernetes-clusters) general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. The standard method to connect is with FastConnect or VPN/Bastion connectivity.
+
+[Earlier in the year Oracle announced](https://blogs.oracle.com/cloud-infrastructure/announcing-private-kubernetes-clusters) general availability of fully private Kubernetes clusters for Oracle Container Enginer for Kubernetes (OKE). This allows you to create fully private OKE clusters without having to expose public IP's. The standard method to connect is with FastConnect, VPN/Bastion connectivity or by restricting access to the SaaS service network IPs. Each on of these has certain weaknesses though:
+
+* Fast Connect & dedicated, private connection – While Oracle FastConnect is cost effective and rapid to setup, interconnects and last mile can be expensive, can take months to setup and requires access through the MPLS (e.g., if remote, you would need to connect to a corporate DC VPN, which then connects into the MPLS). 
+
+* VPN/Bastion connectivity – VPNs are quicker to setup but still have a public attack surface as well as introduce points of failure, give access to whole network, often degrade network performance, and come with high management costs and issues cause (e.g., average VPN issues takes 3.4 days). For these reasons, Gartner states “Zero Trust Network Access (ZTNA) will replace 60% of VPNs by 2023”.
+
+* Restricting access to the SaaS service – While limiting vectors of attack, it limits the potential reach, can be cumbersome to maintain and does not protect against some sophisticated attacks around maliciously-crafted HTTP request through shared CND infrastructure. 
+
+
+
 
 Ok, so what's new? 
 
