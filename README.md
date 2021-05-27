@@ -13,7 +13,7 @@ Oracle Cloud Infrastructure (OCI) & Oracle Container Engine for Kubernetes (OKE)
 
 ## The Problem With an Exposed API
 
-Just a few years ago, the first major vulnerability (CVE-2018–1002105) was discovered in Kubernetes. This vulnerability was present in a default installation of the Kubernetes API server and allowed an attacker to access the backend cluster services. To make matters worse, the attacker's proxied session was authenticated and masquerading as the kube-apiserver's identity. While this particular vulnerability has been fixed, the fact remains there is an obvious benefit to not exposing the Kubernetes API to attack in the first place.
+Just a few years ago, the first major vulnerability (CVE-2018–1002105) was discovered in Kubernetes. This vulnerability was present in a default installation of the Kubernetes API server and allowed an attacker to access the backend cluster services. To make matters worse, the attacker's proxied session was authenticated and masquerading as the kube-apiserver's identity. While this particular vulnerability has been fixed, the fact remains there is an obvious benefit to not exposing the Kubernetes API to attack in the first place. [Researchers are warning of increased complicated attacks targeting Kubernetes including use of malware. ](https://threatpost.com/new-malware-hijacks-kubernetes-clusters-to-mine-monero/163629/)
 
 ## A Private Kubernetes API with OKE
 
