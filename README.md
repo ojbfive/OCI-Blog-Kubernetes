@@ -60,11 +60,11 @@ See the full demo quick start guide [here.](https://developer.netfoundry.io/guid
 
 Once the POD is deployed, in addition to connecting to your containers in the cluster, you will be able to manage your OKE cluster over a secure Zero Trust Network.
 
-In summary, we now have a fourth option from Oracle and NetFoundry which enables anyone to take advantage of fully private Kubernetes clusters without the same drawbacks as other solutions:
+**In summary, we now have a fourth option from Oracle and NetFoundry which enables anyone to take advantage of fully private Kubernetes clusters without the same drawbacks as other solutions:
 
 * We can create automated and private connectivity in minutes from the to any other public/private (or devices and more) with very little training or specialized skills.
 * We create Zero Trust private overlays which can be highly granular, making OKE and its workloads invisible while having the reach and economics of public Internet.
-* •	We achieve cloud-based consumption and economic model with automation to increase uptime and availability as well as reduce operational management costs.
+* •	We achieve cloud-based consumption and economic model with automation to increase uptime and availability as well as reduce operational management costs.**
 
 
 
