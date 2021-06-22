@@ -87,6 +87,6 @@ Once the pod is deployed, in addition to connecting to your containers in the cl
 
 In summary, we now have a fourth option from Oracle and NetFoundry which enables anyone to take advantage of fully private Kubernetes clusters without the same drawbacks as other solutions:
 
-* We can create automated and private connectivity in minutes from the to any other public/private (or devices and more) with very little training or specialized skills.
+* We can create automated and private connectivity in minutes from any device to any public/private cloud with very little training or specialized skills.
 * We create *Zero Trust private overlays* which can be highly granular, making OKE and its workloads invisible while having the reach and economics of public Internet.
 * We achieve cloud-based consumption in an economic model with automation to increase uptime and availability as well as reduce operational management costs.
